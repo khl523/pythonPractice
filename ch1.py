@@ -33,6 +33,25 @@ print(thislist)
 #1.7.4
 thislist.remove("cherry")
 print(thislist)
+
+
+a= 'pynative'
+
+for x in range(0,8,2):
+    print('index[',x,']',a[x])
+
+lista = [1,2,3,4,5,6,7,8]
+
+for x in range(0,9):
+    print('<',lista[0:x],'>')
+
+print('--------')
+
+for x in range(0,8):
+    print('<',lista[x:8],'>')
+
+print('<',[],'>')
+
 thislist.pop(-1)
 print(thislist)
 del thislist[-1]
