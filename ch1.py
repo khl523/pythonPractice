@@ -78,3 +78,24 @@ for x in range(0,8):
     print('<',lista[x:8],'>')
 
 print('<',[],'>')
+
+
+dna = 'gcatgacgttattacgactctgtcacgccgcggtgcgactgaggcgtggcgtctgctgggcctttacttcgcctccgcgccctgcattccgttcctggcctcg'
+dna = list(dna)
+print(dna)
+
+print('\n')
+
+len_g = dna.count('g')
+len_c = dna.count('c')
+len_a = dna.count('a')
+len_t = dna.count('t')
+
+dict_dna = {'g':len_g,'c':len_c,'a':len_a,'t':len_t}
+print(dict_dna)
+
+for x in dict_dna:
+    print()
+    print(x, '|', end='')
+    for x in range(dict_dna[x]):
+        print('-', end='')
